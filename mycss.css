@@ -1,0 +1,95 @@
+  #header{
+    background-color: black;
+    opacity: inherit;
+    right: 3%;
+    left: 3%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .button {
+    background-color: black;
+    font-size: 100%;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    height: 100%;
+    width: 10%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .button1::after {
+    content: "Before";
+  }
+  
+  .button1:hover::after {
+    content: "After";
+    transition-duration: 0.4s;
+  }
+  
+  .button1:hover{
+    background-color:grey;
+    transition-duration: 0.4s;
+  }
+  
+  #name {
+    color:white;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 30%;
+  }
+
+  #name:hover {
+    transition-duration: 0.3s;
+    text-decoration-line: line-through;
+  }
+  #name:hover::after {
+    transition-duration: 0.3s;
+    text-decoration-line: none;
+  }
+  
+  .container{
+    position: relative;
+    width: 30%;
+    margin-left: 5%;
+    display: inline-block;
+  }
+
+  .picture-format{
+    display:block;
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+
+  .container:hover .overlay{
+    height: 100%;
+  }
+
+  .image-text{
+    color: white;
+    size: 20px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 50%);
+    -ms-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  
